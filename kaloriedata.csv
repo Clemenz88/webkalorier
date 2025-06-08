@@ -1,6 +1,6 @@
-food,kcal_per_gram,g_per_cm3
-pasta,1.5,1.0
-salat,0.2,0.3
-kød,2.3,1.1
-rugbrød,2.2,0.9
-avocado,1.6,0.95
+food,kcal_per_gram,g_per_cm2
+salat,0.15,0.3
+tomat,0.18,0.4
+pasta,1.4,0.8
+ost,3.5,0.9
+kød,2.5,0.85
