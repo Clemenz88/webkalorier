@@ -3,5 +3,10 @@ from rapidfuzz import process
 
 def oversæt_fuzzy(navn, kandidater):
     navn = SYNONYMS.get(navn.lower(), navn.lower())
-    match, score, _ = process.extractOne(navn, kandidater, score_cutoff=70)
-    return match if match else None
+    result = process.extractOne(navn, kandidater, score_cutoff=70)
+
+    if result is None:
+        return None
+    else:
+        match, score = result[0], result[1]
+        return match
