@@ -15,7 +15,7 @@ st.title("Kalorieestimering fra billede")
 uploaded_file = st.file_uploader("Upload et billede med hånd og mad", type=["jpg", "jpeg", "png"])
 if uploaded_file:
     img = load_image(uploaded_file)
-    st.image(img, caption="Dit billede", use_column_width=True)
+    st.image(img, caption="Dit billede", use_container_width=True)
 
     with open("temp.jpg", "wb") as f:
         f.write(uploaded_file.read())
